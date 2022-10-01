@@ -20,8 +20,9 @@ namespace DataAccesLayer.Concrete.Repositories
         }
         public void Delete(T p)
         {
-            _object.Remove(p);
-            c.SaveChanges();
+            var deletedEntity =c.Entry(p);
+            deletedEntity.State=EntityState.Deleted;
+            c.SaveChanges();    
         }
 
         public T Get(Expression<Func<T, bool>> filter)
@@ -49,6 +50,8 @@ namespace DataAccesLayer.Concrete.Repositories
 
         public void Update(T p)
         {
+            var updatedEntity =c.Entry(p);
+            updatedEntity.State=EntityState.Modified;
             c.SaveChanges();
         }
     }
