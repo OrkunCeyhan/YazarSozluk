@@ -32,7 +32,9 @@ namespace DataAccesLayer.Concrete.Repositories
 
         public void Insert(T p)
         {
-            _object.Add(p);
+            var addedEntitiy = c.Entry(p);
+            addedEntitiy.State=EntityState.Added;
+            //_object.Add(p);
             c.SaveChanges();
         }
 
