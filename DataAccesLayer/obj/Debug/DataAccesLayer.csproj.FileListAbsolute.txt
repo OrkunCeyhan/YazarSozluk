@@ -32,3 +32,5 @@ C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLa
 C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.CopyComplete
 C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.dll
 C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.pdb
+C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.migwriteredit.resources
+C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_writertitle_add.resources

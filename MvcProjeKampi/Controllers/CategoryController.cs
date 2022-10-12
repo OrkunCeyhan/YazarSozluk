@@ -38,7 +38,7 @@ namespace MvcProjeKampi.Controllers
             /* cm.CategoryAddBL(p);*/ //sayfa yüklenir yüklenmez devreye giriyor
 
             //Validatio kural işlermleri//
-            CategoryValidatior categoryValidatior = new CategoryValidatior();
+            CategoryValidator categoryValidatior = new CategoryValidator();
             ValidationResult results = categoryValidatior.Validate(p);
             if(results.IsValid)
             {

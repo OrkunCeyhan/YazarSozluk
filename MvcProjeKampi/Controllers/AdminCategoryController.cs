@@ -27,7 +27,7 @@ namespace MvcProjeKampi.Controllers
         [HttpPost]
         public ActionResult AddCategory(Category p)
         {
-            CategoryValidatior categoryValidatior = new CategoryValidatior();
+            CategoryValidator categoryValidatior = new CategoryValidator();
             ValidationResult result = categoryValidatior.Validate(p);
             if (result.IsValid)
             {
