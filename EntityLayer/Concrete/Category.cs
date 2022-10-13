@@ -12,9 +12,6 @@ namespace EntityLayer.Concrete
         [Key]
         public int CategoryID { get; set; }
 
-
-        
-
         [StringLength(20)]
         public string CategoryName { get; set; }
 
@@ -22,11 +19,6 @@ namespace EntityLayer.Concrete
         public string CategoryDescription { get; set; }
 
         public bool CategoryStatus { get; set; }
-
-        public void SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
 
         public ICollection<Heading> Headings { get; set; }  
 
