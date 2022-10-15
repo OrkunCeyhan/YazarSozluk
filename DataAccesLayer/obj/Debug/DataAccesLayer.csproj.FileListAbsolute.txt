@@ -36,3 +36,5 @@ C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLa
 C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_writertitle_add.resources
 C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_imagesizechange.resources
 C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_writer_addstatus.resources
+C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_contentstatusadd.resources
+C:\Users\Orkun\Documents\GitHub\YazarSozluk\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_headingstatusadd.resources

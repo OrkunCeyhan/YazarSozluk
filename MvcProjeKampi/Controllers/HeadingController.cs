@@ -50,6 +50,30 @@ namespace MvcProjeKampi.Controllers
             hm.HeadingAdd(p);
             return RedirectToAction("Index");
         }
-   
+        [HttpGet]
+        public ActionResult EditHeading(int id)
+        {
+            List<SelectListItem> valuecategory = (from x in cm.GetList()//bütün listeleri getir
+                                                  select new SelectListItem //yeni liste öğesi seç
+                                                  { //listeden seçilecek olan bir değer 
+                                                      Text = x.CategoryName,//isim olarak göster id leri
+                                                      Value = x.CategoryID.ToString()//seçilen öğe id'si //KATEGORİ SINIFINDaki değerleri id ve isim olarak turucak
+                                                  }).ToList();
+            ViewBag.vlc = valuecategory;
+            var HeadingValues = hm.GetById(id);
+            return View(HeadingValues);
+        }
+        [HttpPost]
+        public ActionResult EditHeading(Heading p)
+        {
+            hm.HeadingUpdate(p);
+            return RedirectToAction("Index");
+        }
+        public ActionResult DeleteHeading(int id)
+        {
+            var HeadingValue = hm.GetById(id); //id'ye göre bul
+            hm.HeadingDelete(HeadingValue);//headingvaluedan gelen değeri sil
+            return RedirectToAction("Index");//sonra indexe yönlendir
+        }
     }
 }
